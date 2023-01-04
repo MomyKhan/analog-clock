@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #e5e5e5;
+    /*background: #333333;*/
+    cursor: pointer;
+}
+.outer_clock{
+    height: 350px;
+    width: 350px;
+    margin:  30px auto;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 2px 2px 2px gray,-2px -2px 2px gray;
+}
+.inner_clock{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /*background: url(pakhi.jpg);*/
+    background: #fff;
+    background-size: cover;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    background-color:#93182c;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    border-radius: 50%;
+    z-index: 4;
+}
+#hour{
+    height: 90px;
+    width: 8px;
+    background:#004b44 ;
+    position: absolute;
+    top: 18%;
+    left: 48%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 2;
+}
+#minute{
+    height: 110px;
+    width: 7px;
+    background:#740f31 ;
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 1;
+}
+#second{
+    height: 120px;
+    width: 5px;
+    background: #104b79;
+    position: absolute;
+    top: 7%;
+    left: 48.5%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 1;  
+}
+.number>p{
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px gray;
+    color: #090909;
+}
+.number>p:nth-child(1){
+    position: absolute;
+    top: 2%;
+    left: 46%;
+}
+.number>p:nth-child(2){
+    position: absolute;
+    top: 44%;
+    left: 93%;
+}
+.number>p:nth-child(3){
+    position: absolute;
+    top: 92%;
+    left: 49%;
+}
+.number>p:nth-child(4){
+    position: absolute;
+    top: 45%;
+    left: 3%;
+}
